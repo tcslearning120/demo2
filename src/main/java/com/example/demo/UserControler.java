@@ -10,19 +10,22 @@ import com.example.demo.entity.User;
 
 @RestController
 public class UserControler {
-@GetMapping	("/user")
+	@GetMapping("/user")
 	String getuser() {
-System.out.println("testing");
-return "testing";
-}
-@PostMapping("/user")
-void creatUser(@RequestBody User user ) {
-	
-System.out.println(user.getName());
-	
-}
-@DeleteMapping("/user")
-void deleteUser() {
-	//ToDo Auto - generated method stub
-}
+		System.out.println("testing");
+		return "testing";
+	}
+
+	@PostMapping("/user")
+	void creatUser(@RequestBody User user) {
+
+		System.out.println(user.getName());
+
+	}
+
+	@DeleteMapping("/user")
+	void deleteUser() {
+		// ToDo Auto - generated method stub
+	}
+//adding new line
 }
